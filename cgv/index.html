@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV 영화</title>
+    <style>
+        *{
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        header{
+            height: 100px;
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 15px;
+        }
+        .logo{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .logo img{
+            height: 60px;
+            width: auto;
+        }
+        nav{
+            height: 50px;
+            background-color: #132B48;
+            display: flex;                     /* 가로배치*/
+            justify-content: center;           /* 가로 가운데 배치*/
+            align-items: center;                /* 세로 가운데 정렬*/
+            gap: 70px;
+        }
+        nav a{
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .page{
+            
+            background: url(img2/bg.png) no-repeat center;
+            background-size: cover;   /*이미지 꽉차게*/
+        }
+        section{
+            padding: 100px 8%;
+        }
+
+        .wrap{
+            width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+            
+        }
+
+        .movie-grid{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 20px;
+            text-align: center;
+            
+        }
+
+        .movie-card {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+            
+
+        }
+
+        .btn-like {
+    width: 34%;
+    background-color: #172436;
+    color: #fff;
+    border: 1px solid #25364e;
+    padding: 8px 0;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.btn-ticket {
+    width: 62%;
+    background-color: #246bfd;
+    color: #fff;
+    border: none;
+    padding: 8px 0;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-area {
+    width: 80%;
+    display: flex;
+    gap: 6px;
+                                  /* 버튼 사이 간격 */
+    margin: 0 auto;
+}
+
+
+        .wide-banner {
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+        }
+        .wide-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            
+        }
+        .movie {
+            display: flex;
+            gap: 40px;
+        }
+        
+        .movie-list {
+            width: 22%;
+        }
+
+        .promotion-banner {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+        }
+
+        
+
+        .premium-banner {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+        }
+
+        .footer {
+            background-color: #132B48; /* 네비게이션 바와 통일감을 주는 색상 */
+            color: #a0a0a0;            /* 은은한 회색 텍스트 */
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-top: 50px;
+        }
+
+        .footer .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .footer .company-info {
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #fff;
+            font-size: 15px;
+        }
+    
+        body {font-family: Arial, "Malgun Gothic", sans-serif;}
+nav {gap: 55px;}
+section {padding: 70px 0;}
+.movie-grid {width: 90%; max-width: 1000px; padding: 0; gap: 2%;}
+.movie-card {width: 23.5%;}
+.poster-area img, .movie-list img {display: block; width: 100%; height: auto; aspect-ratio: 183 / 317; object-fit: cover; border-radius: 8px;}
+.button-area {width: 100%;}
+.btn-like, .btn-ticket {padding: 10px 0;}
+.wrap {width: 90%; max-width: 1000px; padding: 0; margin: 65px auto;}
+.movie {justify-content: space-between; gap: 2%;}
+.movie-list {width: 23.5%;}
+.wide-banner, .promotion-banner, .premium-banner {width: 90%; max-width: 1000px;}
+.promotion-banner img, .premium-banner img {display: block; width: 100%; height: auto;}
+.promotion-banner, .premium-banner {margin: 30px auto; border-radius: 16px; overflow: hidden;}
+.footer {padding: 50px 5%; line-height: 1.8;}
+@media (max-width: 650px) {
+ nav {gap: 25px; overflow-x: auto; justify-content: flex-start; padding: 0 5%; white-space: nowrap;}
+ .movie-grid, .movie {flex-wrap: wrap; gap: 20px 0;}
+ .movie-card, .movie-list {width: 48%;}
+ section {padding: 40px 0;}
+}
+
+    </style>
+</head>
+<body>
+    <div class="page">
+    <header>
+        <div class="logo"><img src="img2/cgv.png" alt="LOGO"></div>
+    </header>
+
+    <nav>
+        <a href="#">예매</a>    <a href="#">영화</a>
+        <a href="#">영화관</a>    <a href="#">이벤트</a>
+        <a href="#">스토어</a>
+    </nav>
+    
+    <section class="hero">
+        <div class="movie-grid">
+            <div class="movie-card">
+       
+                <div class="poster-area">
+                    <img src="img2/p1.png" alt="수평선 너머">
+                </div>
+        
+                <div class="button-area">
+                    <button class="btn-like">♡ 2.9k</button>
+                    <button class="btn-ticket">예매</button>
+                </div>
+            </div>
+
+            <div class="movie-card">
+       
+                <div class="poster-area">
+                    <img src="img2/p2.png" alt="수평선 너머">
+                </div>
+        
+                <div class="button-area">
+                    <button class="btn-like">♡ 2.9k</button>
+                    <button class="btn-ticket">예매</button>
+                </div>
+            </div>
+
+            <div class="movie-card">
+       
+                <div class="poster-area">
+                    <img src="img2/p3.png" alt="수평선 너머">
+                </div>
+        
+                <div class="button-area">
+                    <button class="btn-like">♡ 2.9k</button>
+                    <button class="btn-ticket">예매</button>
+                </div>
+            </div>
+
+            <div class="movie-card">
+       
+                <div class="poster-area">
+                    <img src="img2/p4.png" alt="수평선 너머">
+                </div>
+        
+                <div class="button-area">
+                    <button class="btn-like">♡ 2.9k</button>
+                    <button class="btn-ticket">예매</button>
+                </div>
+
+                
+            
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    
+    <div class="wide-banner">
+        <img src="img2/b1.png" alt="브레이크 포인트 - 생존의 최전선">
+    </div>
+<div class="movie wrap">
+    <div class="movie-list">
+        <img src="img2/p1.png" alt="">
+    </div>
+
+    <div class="movie-list">
+        <img src="img2/p2.png" alt="">
+    </div>
+
+    <div class="movie-list">
+        <img src="img2/p3.png" alt="">
+    </div>
+
+    <div class="movie-list">
+        <img src="img2/p4.png" alt="">
+    </div>
+</div>
+
+<div class="promotion-banner">
+    <img src="img2/b2.png" alt="">
+</div>
+
+<div class="premium-banner">
+    <img src="img2/b3.png" alt="">
+</div>
+
+<div class="footer">
+    <div class="company-info">
+        <p>CJ CGV(주)</p>
+    </div>
+    <p>
+        (04377) 서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동) | 대표이사 : 홍길동<br>
+        사업자등록번호 : 104-81-45690 | 통신판매업신고 : 2017-서울용산-0662호<br>
+        고객센터 : 1544-1122
+    </p>
+</div>
+
+</footer>
+</body>
+</html>
