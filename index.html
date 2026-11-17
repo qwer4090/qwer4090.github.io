@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박용균 포트폴리오</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hero-image.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <style>
+    .about-profile { width: 280px; max-width: 100%; }
+    .about-profile img { aspect-ratio: 1 / 1; object-fit: cover; }
+    .about-profile figcaption { color: #2348c9; }
+  </style>
+</head>
+
+<body>
+  
+
+    <header>
+      <div class="head">
+        <div class="logo"><a href="#home">PORTFOLIO</a></div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Projects</a></li>
+            <li><a href="#contact-wrap">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="home" class="hero-image-page">
+    <div class="hero-image-cover">
+      <h1 class="hero-accessible-title">박용균 포트폴리오 — MAKE IT MATTER.</h1>
+      
+    </div>
+  </main>
+
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-left">
+        <h2 class="about-title">About Me</h2>
+        <figure class="about-visual about-profile">
+          <img src="img/about-profile.png" alt="블루 니트를 입은 가상 디자이너의 프로필 사진" width="1024" height="1024" loading="lazy">
+          <figcaption>박용균</figcaption>
+        </figure>
+        <h3>감각적인 디자인에<br>AI와 움직임을 더합니다.</h3>
+        <p>
+          안녕하세요. 그래픽 디자인부터 영상 편집, 모션그래픽까지 폭넓은 시각 콘텐츠를 제작하는 박용균입니다. 브랜드의 핵심 메시지를 명확하게 전달하기 위해 디자인과 영상의 경계를 넘나들며 작업합니다. Figma를 활용한 UI/UX 기획부터 애프터이펙트 모션, 최신 생성형 AI 툴까지 적재적소에 결합해, 보는 사람의 시선을 사로잡고 오래 기억에 남는 결과물을 만들어냅니다.</p>
+      </div>
+      <div class="about-right">
+        <div class="history-block">
+          <h4>Experience & Education</h4>
+          <ul>
+            <li><strong>2026영진직업전문학교 · AI활용 디지털영상 편집</strong>그래픽 디자인 · 영상 편집 · 모션그래픽 학습 · AI활용</li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h4>Skills</h4>
+          <div class="skill-tags">
+            <span>Photoshop</span>
+            <span>Illustrator</span>
+            <span>Premiere Pro</span>
+            <span>After Effects</span>
+            <span>CapCut</span>
+            <span>Figma</span>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="works">
+    <h2 class="title">Projects</h2>
+    <div class="gallery">
+      <div class="box" onclick="openModal('project4')">
+        <div class="thumb-wrap">
+          <img src="img/m1.png" alt="Video Editing" class="thumbnail">
+          <div class="hover-text">VIEW</div>
+        </div>
+        <p>쿠키광고</p>
+      </div>
+      <div class="box" onclick="openModal('project10')">
+        <div class="thumb-wrap">
+          <img src="img/m2.jpg" alt="Video Editing" class="thumbnail">
+          <div class="hover-text">VIEW</div>
+        </div>
+        <p>운동화 광고</p>
+      </div>
+      <div class="box" onclick="openModal('project11')">
+        <div class="thumb-wrap">
+          <img src="img/m3.jpg" alt="Video Editing" class="thumbnail">
+          <div class="hover-text">VIEW</div>
+        </div>
+        <p>화장품 광고</p>
+      </div>
+      <div class="box" onclick="openModal('project6')">
+        <div class="thumb-wrap">
+          <img src="img/m4.jpg" alt="Motion Graphics" class="thumbnail">
+          <div class="hover-text">VIEW</div>
+        </div>
+        <p>맛집 추천 앱</p>
+      </div>
+      <div class="box" onclick="openModal('project12')">
+        <div class="thumb-wrap">
+          <img src="img/m5.jpg" alt="Motion Graphics" class="thumbnail">
+          <div class="hover-text">VIEW</div>
+        </div>
+        <p>유튜브 인트로</p>
+      </div>
+      <div class="box" onclick="openModal('project1')">
+        <div class="thumb-wrap">
+          <img src="img/p(1.1).jpg" alt="Poster Design" class="thumbnail">
+          <div class="hover-text">VIEW</div>
+        </div>
+        <p>포스터 디자인</p>
+      </div>
+      <div class="box" onclick="openModal('project9')">
+        <div class="thumb-wrap">
+          <img src="img/thumb-brand.jpg" alt="Brand Promotion Advertising" class="thumbnail">
+          <div class="hover-text">VIEW</div>
+        </div>
+        <p>브랜드 프로모션 광고</p>
+      </div>
+
+      <div class="box" onclick="openModal('project8')">
+        <div class="thumb-wrap">
+          <img src="img/thumb-app.jpg" alt="UI/UX App Design" class="thumbnail">
+          <div class="hover-text">VIEW</div>
+        </div>
+        <p>UI/UX 앱 디자인</p>
+      </div>
+      <div class="box" onclick="openModal('project5')">
+        <div class="thumb-wrap">
+          <img src="img/thumb-detail.jpg" alt="Detail Page Design" class="thumbnail">
+          <div class="hover-text">VIEW</div>
+        </div>
+        <p>상세페이지</p>
+      </div>
+      <div class="box" onclick="openModal('project2')">
+        <div class="thumb-wrap">
+          <img src="img/thumb-cardnews.jpg" alt="Card News Design" class="thumbnail">
+          <div class="hover-text">VIEW</div>
+        </div>
+        <p>카드뉴스 디자인</p>
+      </div>
+      <div class="box" onclick="openModal('project3')">
+        <div class="thumb-wrap">
+          <img src="img/thumb-sns.jpg" alt="SNS Banner Design" class="thumbnail">
+          <div class="hover-text">VIEW</div>
+        </div>
+        <p>SNS배너 디자인</p>
+      </div>
+      <div class="box" onclick="openModal('project7')">
+        <div class="thumb-wrap">
+          <img src="img/thumb-website.png" alt="SPACE STUDIO 웹사이트 디자인" class="thumbnail">
+          <div class="hover-text">VIEW</div>
+        </div>
+        <p>웹사이트 디자인</p>
+      </div>
+  </section>
+
+  <section id="contact-wrap">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <h2 class="contact-title">CONTACT ME</h2>
+        <h3>새로운 아이디어를 현실로 만드는<br>여정에 함께하겠습니다.</h3>
+        <p>열정적인 소통과 완성도 높은 결과물로 함께할 분들의 소중한 연락을 기다리겠습니다.</p>
+      </div>
+      <div class="contact-right">
+        <a href="tel:dnjajtls2420@naver.com" class="contact-box">
+          <span class="label">Email</span>
+          <span class="info">dnjajtls2420@naver.com</span>
+        </a>
+        <a href="tel:010-8809-4090" class="contact-box">
+          <span class="label">Phone</span>
+          <span class="info">010-8809-4090</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>© 2026 박용균 · 포트폴리오</p>
+    <p class="attr">Favicon icon by <a href="">Pixel perfect - Flaticon</a></p>
+  </footer>
+
+  <div id="modal" class="modal" onclick="closeModalOnOutside(event)">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <button id="backToTop" title="Go to top">↑</button>
+  <script src="modal.js"></script>
+  <script src="about.js"></script>
+
+</body>
+
+</html>
