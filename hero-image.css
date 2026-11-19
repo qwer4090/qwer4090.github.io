@@ -51,11 +51,11 @@ a:focus-visible, button:focus-visible { outline: 3px solid #1246ed; outline-offs
 .box:hover .thumb-wrap { box-shadow: 0 12px 24px rgba(18, 70, 237, 0.14); }
 .hover-text { background-color: rgba(18, 70, 237, 0.65); color: #d4ff35; }
 
-#contact-wrap { background-color: #1246ed; min-height: 0; padding: 120px 0; }
+#contact-wrap { background-color: #2442a3; min-height: 0; padding: 120px 0; }
 .contact-title { color: #d4ff35; border-bottom-color: #8fa8ff; }
 .contact-left h3 { color: #ffffff; }
 .contact-left p { color: #e3e9ff; }
-.contact-box { background-color: #1038bd; border: 1px solid #6486f4; }
+.contact-box { background-color: #2442a3; border: 1px solid #6486f4; }
 .contact-box .label { color: #d4ff35; }
 .contact-box .info { color: #ffffff; }
 .contact-box:hover { background-color: #d4ff35; border-color: #d4ff35; }
